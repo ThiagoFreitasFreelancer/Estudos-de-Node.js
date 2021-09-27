@@ -1,0 +1,164 @@
+
+
+Node:
+
+	Arquitetura Event Loop -> Arquitetura de eventos
+		#Call Stack -> Pilha de funçoes
+
+	Single - Thread (Por padrão o evente loop é Single Thread
+					 porem utiliza 4 threades para distribuir)
+					 
+	Non-blocking IO -> Podem chamanr N funcoes para serem executadas
+	Modulos proprios
+		http
+		dns
+		fs -> filesystem
+		buffer
+		
+	gerenciadores NPM e Yarn
+	
+	Yarn é um pouco mais rapido
+	
+	FrameWorks(Express, Egg.js, Adonis.js, Nest.js)
+	
+	
+	Rest: Trasferencia Representacional de Estado
+		
+		  Modelo de arquitetura
+		  
+		  Regras Rest:
+		  
+		  1 - Client Server
+		  
+		  2 - Stateless -> O cliente pode fazer n requisiçoes
+		  	  porem o sistema não armazena estados da requisição
+		  	  
+	  	  3 - Cache -> precisa disponibilizar o uso de cache pra inicio ou uso futuro
+	  	  
+	  	  4 - Interface Uniforme
+	  	  
+	  	  	4.1 - Identidade dos recursos
+	  	  		ex1 http//enderecoservidor.com.br/produtos
+	  	  		ex2 http//enderecoservidor.com.br/clientes
+  	  		
+  	  		4.2 - Representacao dos recursos
+  	  		
+  	  		4.3 - Mensagens auto-descritas
+  	  		
+  	  		4.4 - HATEOAS(Hypertest As The Engine Of Application State)
+	  	  
+	  	  5 - Camadas
+	  	  
+	  	  6 - Codigo Sob Demanda 
+	  	  
+  	  
+	HTTP
+		
+		GET - Leitura
+		POST - Criacao
+		PUT - Atualizacao
+		DELETE - Delecao
+		PATCH - Atualizacao parcial
+		
+	HTTO Codes
+	
+		ABC 
+		
+		A -> Identifica o tipo do Erro
+		B ->
+		C -> 
+		
+		1XX -> Informativa
+			
+		2XX -> Confirmacao
+			200 - Requisicao bem sucedida
+			201 - Created (geralmente usado para POST apos uma insercao)
+			
+		3XX -> Redirecionamento
+			301 - Moved Permanentty
+			302 - Moved
+			
+		4XX -> Erros do cliente
+			400 - Bad Request
+			401 - Unauthorized
+			402 - Forbidden
+			404 - Not Found
+			422 - Unprocessable Entity
+			
+		5XX -> Erros no servidor
+			500 - Internal Server Erro
+			501 - Bad Gatware
+			
+	
+	Paraemtros de Requisicao:
+	
+		Bory Params
+			Objetos que serao passados para insercao ou alteracao
+			de um recurso, como por exemplo um cadastro (JSON)
+	  	  
+		Header Params
+			authority: app.rocketseat.com.br
+			method: GET
+			path: /api/journey-nodes
+			scheme: https
+			referer: https://app.rocketseat.com.br/node
+			
+		Query Params
+			
+			https://app.rocketseat.com.br/node?page=2&limit=50
+			
+			Chave = (page, limit)
+			Valor = (2, 50)
+			Separacao = (&)
+
+			Serve para paginacao
+			
+			
+		Route Params
+		
+			parametros que vao no meio das rotas, por exemplo um id
+			
+			Serve para identificar um recurso, editar/deletar/atualizar o mesmo
+	
+	Informacoes adicionais
+	
+		uuid = universally unique identifier
+
+		O método some() testa se ao menos um dos 
+		elementos no array passa no teste implementado 
+		pela função atribuída e retorna um valor true ou false.
+
+		array.some((array) => array.date === date)
+
+		O método find() retorna o valor do primeiro elemento do
+		array que satisfizer a função de teste  
+		
+		array.find( element => element == date)
+	
+	Middlewares: 
+		
+		middle = meio , ware = mercadoria
+
+		sao funcoes que ficam entre a requisicao e a resposta
+		um dos usos e para validacao de usuarios
+  	  	  
+		Exemplos:
+				
+		O Middlewares veryfyUfExistsAccountCPF vai ser chamado so pra essa rota		
+		app.get("/statement", veryfyUfExistsAccountCPF, (request, response) => {})
+
+		app.use(veryfyUfExistsAccountCPF)
+
+	  	  
+	  	  
+	  	  
+	  	  
+	  	  
+	  	  
+	  	  
+	  	  
+	  	  
+	  	  
+	  	  
+	  	  
+	  	  	
