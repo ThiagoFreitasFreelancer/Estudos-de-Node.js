@@ -91,19 +91,28 @@ Node:
 			
 	
 	Paraemtros de Requisicao:
+
+		request.params -> serve para editar e deletar
+
+			acessar os parametros da rota
 	
-		Bory Params
-			Objetos que serao passados para insercao ou alteracao
-			de um recurso, como por exemplo um cadastro (JSON)
+		request.body -> acessar corpo da requisição ()
+
+			Objetos que serao passados para insercao, alteracao
+			e criação de um recurso, como por exemplo um cadastro
+			(JSON)
 	  	  
-		Header Params
+		request.header
+
 			authority: app.rocketseat.com.br
 			method: GET
 			path: /api/journey-nodes
 			scheme: https
 			referer: https://app.rocketseat.com.br/node
 			
-		Query Params
+		request.query -> serve como filtro
+
+			Exemplo pratico: tras id de um usuario para ver se existe
 			
 			https://app.rocketseat.com.br/node?page=2&limit=50
 			
