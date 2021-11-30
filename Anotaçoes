@@ -158,6 +158,9 @@ Node:
 
 		app.use(veryfyUfExistsAccountCPF)
 
+	Dentro do typescript o operador "?" serve para dizer que o atributo
+	Nao e obrigatorio
+
 	  	  
 	  	  
 	  	  
