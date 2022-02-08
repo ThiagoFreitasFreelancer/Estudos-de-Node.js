@@ -1,4 +1,10 @@
+SOLID:
 
+	S = SRP - Single Responsability Principle (Pincipio de Responsabilidade unica)
+	O = OCP - Open-Closed Pinciple (Principio aberto/fechado)
+	L = LSP - Likov Substitution Pinciple (Principio de Subistituição Liskov)
+	I = ISP - Interface Segregation Pinciple (Principio de Segregação de Interface)
+	D = DIP - Dependecy inversion Pinciple (Principio de inversão de dependencia)
 
 Node:
 
